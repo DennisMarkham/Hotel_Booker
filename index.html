@@ -1,0 +1,28 @@
+<head>
+	<script src ="script.js"></script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+
+  <link rel = "stylesheet" href = "style.css" >
+</head>
+
+<body>
+  Guests: <input type = "number" id="guests" min="1" value ="1"/>
+<br>
+<br>
+Rooms: <input type = "number" id="rooms" min="1" value="1"/>
+<br>
+<br>
+
+Start Day: <input type = "date" id = "start">
+
+End Day:<input type ="date" id = "end">
+<br>
+Hotel: <select id = "hotel">
+  <option value = "val">value</option>
+  <option value = "mod">moderate</option>
+  <option value = "lux">luxury</option>
+</select>
+<br>
+<br>
+<button onClick="check()">submit</button>
+</body>
