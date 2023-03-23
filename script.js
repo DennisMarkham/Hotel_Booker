@@ -1,4 +1,9 @@
+console.log(moment().format('YYYY-MM-DD'));
 
+//why the heck doesn't this set their default values to today?
+document.getElementById("start").value = moment().format('YYYY-MM-DD');
+
+document.getElementById("end").value = moment().format('YYYY-MM-DD');
 
 function check()
 {
@@ -74,13 +79,13 @@ function priceCalc(hotel, rooms, days)
 {
   switch(hotel){
       case "val":
-      alert($ + (rooms * 200 * days));
+      alert("$" + (rooms * 200 * days));
       break;
       case "mod":
-      alert($ + (rooms * 400 * days));
+      alert("$" + (rooms * 400 * days));
       break;
       case "lux":
-      alert($ + (rooms * 800 * days));
+      alert("$" + (rooms * 800 * days));
       break;
   }
 }
