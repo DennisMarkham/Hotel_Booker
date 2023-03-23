@@ -1,4 +1,9 @@
+console.log(moment().format('YYYY-MM-DD'));
 
+//why the heck doesn't this set their default values to today?
+document.getElementById("start").value = moment().format('YYYY-MM-DD');
+
+document.getElementById("end").value = moment().format('YYYY-MM-DD');
 
 function check()
 {
