@@ -1,28 +1,38 @@
 <head>
-	
-  <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
-<script src ="script.js"></script>
-  <link rel = "stylesheet" href = "style.css" >
+	  <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+	<script src = "validation.js">
+
+</script>
 </head>
-
 <body>
-  Guests: <input type = "number" id="guests" min="1" value ="1"/>
-<br>
-<br>
-Rooms: <input type = "number" id="rooms" min="1" value="1"/>
-<br>
-<br>
-
-Start Day: <input type = "date" id = "start">
-
-End Day:<input type ="date" id = "end">
-<br>
-Hotel: <select id = "hotel">
-  <option value = "val">value</option>
-  <option value = "mod">moderate</option>
-  <option value = "lux">luxury</option>
-</select>
-<br>
-<br>
-<button onClick="check()">submit</button>
+<form name = "booking"  onsubmit = "return validateForm()">
+<label for = "name">Full Name:</label><input type = "text" name = "fullName" required/>
+<br />
+<br />
+<label for="phone">Phone Number:</label><input type = "text" name = "phone" pattern="\d{1,2}*[-\.]*\d{3}[-\.]*"/>
+<br />
+<br />
+<label for="email">E-mail:</label><input type = "text" name = "email" />
+<br />
+<br />
+<label for = "startDay">Start Day:</label><input type = "date" name = "start" required/>
+<br />
+<br />
+<label for = "endDay">End Day:</label><input type = "date" name = "end" required/>
+<br />
+<br />
+<label for ="guests">Guests:</label><input type = "number" name = "guests" min = "1" value = "1"/>
+<br />
+<br />
+<label for = "rooms">Rooms:</label><input type = "number" name = "rooms" min =  "1" value = "1"/>
+<br />
+<br />
+<label for ="creditCard">Credit Cards:</label><input type = "text" name = "creditCard" required pattern ="\d{4}[\s-]*\d{4}[\s-]*\d{4}[\s-]*\d{4}" />
+<br />
+<br />
+<label for = "cvv">CVV:</label><input type = "text" name = "cvv" required pattern ="\d{3}" />
+<br />
+<br />
+<input type = "submit" value = "submit" />
+</form>
 </body>
