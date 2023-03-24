@@ -1,0 +1,17 @@
+$small: 40px;
+
+input[name="guests"]
+{
+
+width: $small
+}
+
+input[name = "rooms"]
+{
+	width: $small;
+}
+
+input[name = "cvv"]
+{
+	width: $small;
+}

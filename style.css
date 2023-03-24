@@ -1,4 +1,13 @@
-input[type="number"]
-{
+input[name=guests] {
   width: 40px;
 }
+
+input[name=rooms] {
+  width: 40px;
+}
+
+input[name=cvv] {
+  width: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
